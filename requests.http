@@ -1,4 +1,29 @@
 
-### 
+### Create Course
+POST http://localhost:5000/cursos
+Content-Type: application/json
+
+{
+  "codigo": "555",
+  "nombre": "Temporal",
+  "creditos": 5
+}
+
+### Get All Courses
 GET http://localhost:5000/cursos
 
+### Get One Course
+GET http://localhost:5000/cursos/1232
+
+### Delete Course
+DELETE http://localhost:5000/cursos/555
+
+### Update Course
+PUT http://localhost:5000/cursos/555
+Content-Type: application/json
+
+{
+  "codigo": "555",
+  "nombre": "Temporal UPDATED!",
+  "creditos": 10
+}
